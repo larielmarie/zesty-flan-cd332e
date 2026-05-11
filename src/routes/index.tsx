@@ -107,7 +107,7 @@ function NavBar() {
       style={{ backgroundColor: 'var(--maroon)' }}
       className="sticky top-0 z-50 shadow-lg"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
         <div className="flex items-center gap-3">
           <div
             style={{ backgroundColor: 'var(--gold)' }}
@@ -115,7 +115,7 @@ function NavBar() {
           />
           <div>
             <div
-              className="font-display font-bold text-white text-lg leading-tight"
+              className="font-display font-bold text-white text-base md:text-lg leading-tight"
             >
               Advanced Furniture
             </div>
@@ -127,26 +127,30 @@ function NavBar() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-3 flex-wrap md:flex-nowrap justify-center md:justify-end w-full md:w-auto">
           <a
             href={PHONE_HREF}
-            className="font-ui font-bold text-sm tracking-wider uppercase px-4 py-2 rounded transition-all duration-200 hover:opacity-90 mr-2"
+            className="font-ui font-bold text-xs md:text-sm tracking-wider uppercase px-2 md:px-4 py-1.5 md:py-2 rounded transition-all duration-200 hover:opacity-90 whitespace-nowrap"
             style={{
               backgroundColor: 'var(--gold)',
               color: 'var(--maroon-dark)',
             }}
           >
-            <Phone size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> Call Us
+            <Phone size={14} className="md:hidden inline mr-1" style={{ display: 'inline', verticalAlign: 'middle' }} />
+            <Phone size={16} className="hidden md:inline mr-1" style={{ display: 'inline', verticalAlign: 'middle' }} /> 
+            <span className="hidden sm:inline">Call Us</span>
+            <span className="sm:hidden">Call</span>
           </a>
           <a
             href={EMAIL_HREF}
-            className="font-ui font-bold text-sm tracking-wider uppercase px-4 py-2 rounded transition-all duration-200 hover:opacity-90"
+            className="font-ui font-bold text-xs md:text-sm tracking-wider uppercase px-2 md:px-4 py-1.5 md:py-2 rounded transition-all duration-200 hover:opacity-90 whitespace-nowrap"
             style={{
               backgroundColor: 'var(--gold)',
               color: 'var(--maroon-dark)',
             }}
           >
-            Request a Quote
+            <span className="hidden sm:inline">Request a Quote</span>
+            <span className="sm:hidden">Quote</span>
           </a>
         </div>
       </div>
