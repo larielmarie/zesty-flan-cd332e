@@ -49,6 +49,15 @@ const services = [
   },
 ]
 
+const recentProjects = [
+  '/1.jpg',
+  '/2.jpg',
+  '/3.jpg',
+  '/4.jpg',
+  '/5.jpg',
+  '/6.jpg',
+]
+
 const stats = [
   { value: '20+', label: 'Years in Business' },
   { value: '1000+', label: 'Projects Completed' },
@@ -270,6 +279,50 @@ function StatsBar() {
   )
 }
 
+function RecentProjects() {
+  return (
+    <section className="py-24 px-6" style={{ backgroundColor: 'white' }}>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <div
+            className="font-ui font-semibold text-sm tracking-widest uppercase mb-4"
+            style={{ color: 'var(--gold-dark)' }}
+          >
+            Recent Projects
+          </div>
+          <h2
+            className="font-display font-bold text-4xl md:text-5xl"
+            style={{ color: 'var(--maroon)' }}
+          >
+            Recent Projects
+          </h2>
+          <p
+            className="font-ui text-base text-gray-600 max-w-3xl mx-auto mt-4"
+            style={{ letterSpacing: '0.01em' }}
+          >
+            A curated selection of recent commercial furniture installs and workspace transformations.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {recentProjects.map((src, index) => (
+            <div
+              key={src}
+              className="overflow-hidden rounded-3xl shadow-xl bg-white"
+            >
+              <img
+                src={src}
+                alt={`Recent project ${index + 1}`}
+                className="w-full h-72 object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function Services() {
   return (
     <section
@@ -380,7 +433,7 @@ function WhyUs() {
               style={{ backgroundColor: 'var(--gold)' }}
             />
             <img
-              src="/team-install.jpg"
+              src="/extra.jpg"
               alt="Advanced Furniture installation crew at work"
               className="relative rounded-xl shadow-2xl w-full object-cover"
               style={{ maxHeight: '460px' }}
@@ -585,6 +638,7 @@ function HomePage() {
       <NavBar />
       <Hero />
       <StatsBar />
+      <RecentProjects />
       <Services />
       <WhyUs />
       <Process />
