@@ -524,7 +524,7 @@ function CTA() {
             color: 'var(--maroon-dark)',
           }}
         >
-          <span className="text-2xl">📞</span>
+          <Phone size={24} style={{ color: 'var(--maroon-dark)' }} />
           {PHONE}
         </a>
 
