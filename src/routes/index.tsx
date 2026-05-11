@@ -12,7 +12,8 @@ const EMAIL_HREF = 'mailto:Tirrell.wilson@AdvancedFurnitureInstallation.com'
 
 const services = [
   {
-    icon: '🪑',
+    icon: null,
+    iconImg: '/desk-icon.svg',
     title: 'Systems Furniture',
     description:
       'Expert installation of modular workstations, panel systems, and cubicle configurations for open-plan and private offices.',
@@ -360,7 +361,17 @@ function Services() {
                 borderLeftColor: 'var(--gold)',
               }}
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="mb-4">
+                {service.iconImg ? (
+                  <img
+                    src={service.iconImg}
+                    alt={service.title}
+                    style={{ width: '48px', height: '48px' }}
+                  />
+                ) : (
+                  <span className="text-4xl">{service.icon}</span>
+                )}
+              </div>
               <h3
                 className="font-display font-bold text-xl mb-3"
                 style={{ color: 'var(--maroon)' }}
