@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { Phone } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -125,7 +126,7 @@ function NavBar() {
               color: 'var(--maroon-dark)',
             }}
           >
-            <span>📞</span> Call Us
+            <Phone size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> Call Us
           </a>
           <a
             href={EMAIL_HREF}
