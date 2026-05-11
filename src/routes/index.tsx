@@ -6,6 +6,8 @@ export const Route = createFileRoute('/')({
 
 const PHONE = '850.390.3442'
 const PHONE_HREF = 'tel:8503903442'
+const EMAIL = 'Tirrell.wilson@AdvancedFurnitureInstallation.com'
+const EMAIL_HREF = 'mailto:Tirrell.wilson@AdvancedFurnitureInstallation.com'
 
 const services = [
   {
@@ -48,15 +50,14 @@ const services = [
 
 const stats = [
   { value: '20+', label: 'Years in Business' },
-  { value: '500+', label: 'Projects Completed' },
+  { value: '1000+', label: 'Projects Completed' },
   { value: '100%', label: 'Client Satisfaction Goal' },
   { value: '6', label: 'Service Specialties' },
 ]
 
 const whyUs = [
-  'Manufacturer-trained installation technicians',
   'Strict punch-list process — we don\'t leave until it\'s right',
-  'Insured crews with clean backgrounds',
+  'Crews with clean backgrounds',
   'On-time delivery coordination & staging',
   'Experience with GSA, healthcare, and higher-ed compliance',
   'Locally owned and operated in the Florida Panhandle',
@@ -116,14 +117,14 @@ function NavBar() {
           </div>
         </div>
         <a
-          href={PHONE_HREF}
+          href={EMAIL_HREF}
           className="font-ui font-bold text-sm tracking-wider uppercase px-5 py-2 rounded transition-all duration-200 hover:opacity-90"
           style={{
             backgroundColor: 'var(--gold)',
             color: 'var(--maroon-dark)',
           }}
         >
-          {PHONE}
+          Request a Quote
         </a>
       </div>
     </nav>
@@ -166,7 +167,7 @@ function Hero() {
             border: '1px solid rgba(201,162,39,0.4)',
           }}
         >
-          Pensacola & Gulf Coast Commercial Furniture
+          Florida Roots. Southern Reach.
         </div>
 
         <h1
@@ -207,12 +208,7 @@ function Hero() {
           </a>
         </div>
 
-        <p
-          className="font-ui text-sm mt-6 tracking-wide"
-          style={{ color: 'rgba(201,162,39,0.7)' }}
-        >
-          Licensed · Insured · Manufacturer-Trained Technicians
-        </p>
+
       </div>
 
       {/* Scroll indicator */}
@@ -515,7 +511,7 @@ function CTA() {
             color: 'var(--maroon-dark)',
           }}
         >
-          <span className="text-2xl">📞</span>
+          <span className="text-2xl" style={{ filter: 'hue-rotate(-20deg) saturate(1.2)' }}>📞</span>
           {PHONE}
         </a>
 
