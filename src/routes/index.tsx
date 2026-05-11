@@ -116,16 +116,28 @@ function NavBar() {
             </div>
           </div>
         </div>
-        <a
-          href={EMAIL_HREF}
-          className="font-ui font-bold text-sm tracking-wider uppercase px-5 py-2 rounded transition-all duration-200 hover:opacity-90"
-          style={{
-            backgroundColor: 'var(--gold)',
-            color: 'var(--maroon-dark)',
-          }}
-        >
-          Request a Quote
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={PHONE_HREF}
+            className="font-ui font-bold text-sm tracking-wider uppercase px-4 py-2 rounded transition-all duration-200 hover:opacity-90 mr-2"
+            style={{
+              backgroundColor: 'var(--gold)',
+              color: 'var(--maroon-dark)',
+            }}
+          >
+            <span style={{ filter: 'hue-rotate(-20deg) saturate(1.2)' }}>📞</span> Call Us
+          </a>
+          <a
+            href={EMAIL_HREF}
+            className="font-ui font-bold text-sm tracking-wider uppercase px-4 py-2 rounded transition-all duration-200 hover:opacity-90"
+            style={{
+              backgroundColor: 'var(--gold)',
+              color: 'var(--maroon-dark)',
+            }}
+          >
+            Request a Quote
+          </a>
+        </div>
       </div>
     </nav>
   )
@@ -190,14 +202,14 @@ function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href={PHONE_HREF}
+            href={EMAIL_HREF}
             className="font-ui font-bold text-xl md:text-2xl tracking-wider px-10 py-5 rounded-lg shadow-2xl transition-all duration-200 hover:scale-105 hover:shadow-gold"
             style={{
               backgroundColor: 'var(--gold)',
               color: 'var(--maroon-dark)',
             }}
           >
-            📞 {PHONE}
+            Request a Quote
           </a>
           <a
             href="#services"
@@ -511,7 +523,7 @@ function CTA() {
             color: 'var(--maroon-dark)',
           }}
         >
-          <span className="text-2xl" style={{ filter: 'hue-rotate(-20deg) saturate(1.2)' }}>📞</span>
+          <span className="text-2xl">📞</span>
           {PHONE}
         </a>
 
