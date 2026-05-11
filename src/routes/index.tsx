@@ -136,8 +136,7 @@ function NavBar() {
               color: 'var(--maroon-dark)',
             }}
           >
-            <Phone size={14} className="md:hidden inline mr-1" style={{ display: 'inline', verticalAlign: 'middle' }} />
-            <Phone size={16} className="hidden md:inline mr-1" style={{ display: 'inline', verticalAlign: 'middle' }} /> 
+            <Phone size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '0.25rem' }} />
             <span className="hidden sm:inline">Call Us</span>
             <span className="sm:hidden">Call</span>
           </a>
