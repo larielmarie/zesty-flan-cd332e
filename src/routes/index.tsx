@@ -125,7 +125,7 @@ function NavBar() {
               color: 'var(--maroon-dark)',
             }}
           >
-            <span>📞</span> Call Us
+            <span style={{ filter: 'hue-rotate(-25deg) saturate(1.8)' }}>📞</span> Call Us
           </a>
           <a
             href={EMAIL_HREF}
