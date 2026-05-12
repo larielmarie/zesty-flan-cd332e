@@ -192,7 +192,7 @@ function Hero() {
             border: '1px solid rgba(201,162,39,0.4)',
           }}
         >
-          Florida Roots. Southern Reach.
+          Pensacola Roots. Nationwide Travel.
         </div>
 
         <h1

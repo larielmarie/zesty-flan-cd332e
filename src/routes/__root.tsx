@@ -6,8 +6,9 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Advanced Furniture — Commercial Furniture Installation' },
-      { name: 'description', content: 'Advanced Furniture provides expert commercial furniture installation across Pensacola and the Gulf Coast. Systems furniture, case goods, healthcare, education, and government projects.' },
+      { title: 'Advanced Furniture | Commercial Furniture Installation | Florida & Nationwide' },
+      { name: 'description', content: 'Advanced Furniture provides expert commercial furniture installation across Florida and nationwide. Specializing in systems furniture, case goods, healthcare, and government projects. Serving Pensacola, Gulf Coast, and beyond.' },
+      { name: 'keywords', content: 'commercial furniture installation Florida, office furniture installation, systems furniture installation, Pensacola furniture installation, Florida commercial furniture, florida furniture installation, florida furniture company, travel commerical furniture installation, afi, advanced furniture installation, nationwide furniture installation' },
     ],
     links: [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
